@@ -1,0 +1,48 @@
+// bien dich mot thu muc voi sass:
+// mo cmd, di den thu muc cha cua thu muc can bien dich
+// chay lenh: sass --watch child_foler:child_folder\your_folder --style expanded
+
+@function wide-screen($size, $type: "width"){
+  @if $type == "width" {
+    $size: ($size * 9) / 16;
+  } @else if $type == "height" {
+    $size: ($size * 16) / 9;
+  } @else {
+    $size: 0;
+  }
+  @return $size;
+}
+
+// @debug wide-screen(1600px);
+
+// $animal: Tiger, "Buffalo", Eagle;
+// $test: 20px 30px 40px 50px;
+// @debug nth($test, 2);
+
+// .animal{
+//   type: nth($animal, 2);
+//   type: unquote(nth($animal, 2));
+// }
+
+// @for $i from 1 through 3{
+//   .#{nth($animal, $i)}{
+//     color: #333 + 100 * $i;
+//   }
+// }
+
+// $i: 1;
+// @while $i < 4 {
+//   .#{nth($animal, $i)} {
+//     color: #666 + 100 * $i;
+//   }
+//   $i: $i + 1;
+// }
+
+
+// $i: 1;
+// @each $item in $animal {
+//   .#{$item} {
+//     color: #111 + 100 * $i;
+//   }
+//   $i: $i + 1;
+// }

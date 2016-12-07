@@ -1,0 +1,14 @@
+.alert, .alert-warning, .alert-success {
+  padding: 77px;
+  font-size: 11px;
+}
+
+.alert-warning {
+  background: yellow;
+}
+
+.alert-success {
+  background: green;
+}
+
+/*# sourceMappingURL=inheritance.css.map */

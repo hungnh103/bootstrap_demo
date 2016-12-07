@@ -1,0 +1,56 @@
+.family {
+  font-family: "Times New Roman, Arial, Tahoma";
+  font-size: 10px;
+  padding: 10px 20px; }
+
+.child {
+  font-family: "Times New Roman, Arial, Tahoma";
+  font-size: 10px;
+  padding: 10px 20px;
+  color: #333; }
+
+/**mathematic operators**/
+.string {
+  string: Test thu nghiem;
+  string: TestTest;
+  string: TestNghiem;
+  string: "TestNghiem";
+  string: "TestTest";
+  string: "Test" "Test", "TestMot" HaiBa;
+  string: "Test150";
+  string: Test150;
+  string: Test150;
+  string: 150Test;
+  string: "150px150px";
+  string: "150px150px"; }
+
+.add {
+  string: 300px;
+  string: 300em;
+  string: 300batky; }
+
+.subtract {
+  string: 0batky; }
+
+.multiply {
+  string: 22500batky;
+  string: 22500batky; }
+
+.divide {
+  string: 1;
+  string: 1batky; }
+
+.remainder {
+  string: 50px;
+  string: 50px;
+  string: 50px;
+  string: 50batky; }
+
+.other {
+  string: 0px 5px 10px 15px;
+  string: 5px 25px;
+  string: 0px -5.66667px;
+  string: -1;
+  string: 0px -15px/15px; }
+
+/*# sourceMappingURL=operator.css.map */

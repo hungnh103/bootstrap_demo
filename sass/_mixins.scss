@@ -1,0 +1,43 @@
+@mixin border-radius($radius: 1px){
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+  &.active{
+    background: #ddd;
+  }
+  .child{
+    background: #333;
+  }
+  // khoi noi dung
+  @content;
+}
+
+@mixin box{
+  @include border-radius(10px);
+  padding: 15px;
+  margin: 15px;
+  &:hover{
+    background: #333;
+    color: #fff;
+  }
+  &.active{
+    background: #eee;
+    color: #666;
+  }
+}
+
+// .test{
+//   @include border-radius(20px);
+// }
+
+// .demo{
+//   @include border-radius(15px){
+//     font-size: 18px;
+//     line-height: 20px;
+//   }
+// }
+
+// .box{
+//   @include box;
+// }

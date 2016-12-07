@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Demo ScrollSpy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+      .content {
+        overflow: auto;
+        height: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="nav-test">
+        <ul class="nav nav-pills">
+          <li class="active"><a href="#doan_1">Đoạn 1</a></li>
+          <li><a href="#doan_2">Đoạn 2</a></li>
+          <li><a href="#doan_3">Đoạn 3</a></li>
+          <li><a href="#doan_4">Đoạn 4</a></li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown">Đoạn 5</a>
+            <ul class="dropdown-menu">
+              <li><a href="#doan_5_1">Đoạn 5.1</a></li>
+              <li><a href="#doan_5_2">Đoạn 5.2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content" data-spy="scroll" data-target="#nav-test">
+        <!-- @Doan 1 -->
+        <h4 id="doan_1">Doan 1</h4>
+        <p>
+          Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+        </p>
+
+        <!-- @Doan 2 -->
+        <h4 id="doan_2">Doan 2</h4>
+        <p>
+          Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.
+        </p>
+
+        <!-- @Doan 3 -->
+        <h4 id="doan_3">Doan 3</h4>
+        <p>
+          Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.
+        </p>
+
+        <!-- @Doan 4 -->
+        <h4 id="doan_4">Doan 4</h4>
+        <p>
+          In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.
+        </p>
+
+        <!-- @Doan 5.1 -->
+        <h4 id="doan_5_1">Doan 5.1</h4>
+        <p>
+          Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.
+          Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.
+        </p>
+
+
+        <!-- @Doan 5.2 -->
+        <h4 id="doan_5_2">Doan 5.2</h4>
+        <p>
+          Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.
+          Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.
+        </p>
+      </div>
+
+      <button class="btn btn-danger">Hủy Đoạn 2</button>
+
+    </div>
+
+    <script type="text/javascript">
+      $('.btn-danger').click(function () {
+        $('#doan_2').remove();
+        //console.log($('#nav-test a[href="#doan_2"]').remove());
+        $('#nav-test > ul').append('<li><a href="#doan_6">Đoạn 6</a></li>');
+        $('.content').append('<h4 id="doan_6">Doan 6</h4>Doan 6<br/>Doan 6<br/>Doan 6<br/>Doan 6<br/>Doan 6<br/>Doan 6<br/>');
+        $('.content[data-spy="scroll"]').scrollspy('refresh');
+      });
+
+      $('.content').scrollspy({
+        offset: $('.content').children('h4:eq(0)').outerHeight(true)
+      });
+
+      $('#nav-test').on('activate.bs.scrollspy', function () {
+        console.log($(this));
+        var dMenu = $(this).children().children('li.dropdown');
+        if (dMenu.hasClass('active')) {
+          console.log(dMenu.addClass('open').html());
+        } else {
+          dMenu.removeClass('open');
+        }
+      })
+    </script>
+
+  </body>
+</html>

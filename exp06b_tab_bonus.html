@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Demo Responsive Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </head>
+
+  <body data-spy="scroll" data-target="#nav-test">
+    <div class="container">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" id="myTab">
+        <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+        <li><a href="#profile" data-toggle="tab">Profile</a></li>
+        <li><a href="#messages" data-toggle="tab">Messages</a></li>
+        <li><a href="#settings" data-toggle="tab">Settings</a></li>
+        <li class="dropdown">
+          <a href="#" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#submenu_1" data-toggle="tab">Submenu 1</a></li>
+            <li><a href="#submenu_2" data-toggle="tab">Submenu 2</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane fade in active" id="home">
+          <div class="row">
+            <div class="col-md-9">
+              Home Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+            <div class="col-md-3">aaaaaaaa</div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="profile">
+          Profile Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="tab-pane fade" id="messages">
+          Messages Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="tab-pane fade" id="settings">
+          <div class="well">
+            Settings Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+        <div class="tab-pane fade" id="submenu_1">
+          <div class="alert alert-success">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+        <div class="tab-pane fade" id="submenu_2">
+          <div class="alert alert-danger">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-12">
+          <button type="button" class="btn btn-primary tab-prev">Previous</button>
+          <button type="button" class="btn btn-default tab-home">Home</button>
+          <button type="button" class="btn btn-danger tab-profile">Profile</button>
+          <button type="button" class="btn btn-warning tab-messages">Messages</button>
+          <button type="button" class="btn btn-info tab-settings">Settings</button>
+          <button type="button" class="btn btn-success tab-next">Next</button>
+        </div>
+      </div>
+    </div>
+
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".tab-home").click(function(){
+          $("#myTab a[href='#home']").tab("show");
+        });
+
+        $('.tab-profile').click(function () {
+          $('#myTab a[href="#profile"]').tab('show');
+        });
+
+        $('.tab-messages').click(function () {
+          $('#myTab a:eq(2)').tab('show');
+        });
+
+        $(".tab-settings").click(function(){
+          $("#myTab a[href='#settings']").tab('show');
+        });
+
+        $('.tab-next').click(function () {
+          $('#myTab li.active').next().children().tab('show');
+        });
+
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+          $('.tab-prev').off(); //Tắt sự kiện đang theo dõi trước đó
+          $('.tab-prev').on('click', function () {
+            $(e.relatedTarget).tab('show');
+            if ($(e.relatedTarget).parent().hasClass('dropdown')) {
+              $(e.relatedTarget).parent().prev().children().tab('show');
+            }
+          });
+
+          $('.tab-next').off(); //Tắt sự kiện đang theo dõi trước đó
+          $('.tab-next').on('click', function() {
+            $(e.target).parent().next().children().tab('show');
+            console.log(e.target);
+            if ($(e.target).parent().next().hasClass('dropdown')) {
+              $(e.target).parent().next().children('ul').children('li').children('a:first').tab('show');
+            }
+
+          });
+        })
+      });
+    </script>
+
+  </body>
+</html>

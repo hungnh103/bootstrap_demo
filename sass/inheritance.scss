@@ -1,0 +1,40 @@
+@mixin custom($padding, $fontsize){
+  padding: $padding;
+  font-size: $fontsize;
+}
+
+.alert{
+  @include custom(77px, 11px);
+}
+
+.alert-warning{
+  @extend .alert;
+  background: yellow;
+}
+
+.alert-success{
+  @extend .alert;
+  background: green;
+}
+
+
+
+// .alert-warning{
+//   @include custom;
+//   background: yellow;
+// }
+
+// .alert-success{
+//   @include custom;
+//   background: green;
+// }
+
+// .alert-danger{
+//   @include custom;
+//   background: red;
+// }
+
+// .alert-default{
+//   @include custom;
+//   background: gold;
+// }

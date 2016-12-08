@@ -1,0 +1,29 @@
+// bien dich file .scss tu dong:
+// mo cmd tai thu muc chua file
+// chay lenh: sass --watch filename.scss:filename.css
+
+// muon hien thi file css nhu cach viet thong thuong:
+// chay lenh: sass --watch filename.scss:filename.css --style expanded
+
+ul{
+  list-style: none;
+  li{
+    &.active{
+      background: #ddd;
+    }
+    position: relative;
+    a{
+      text-decoration: none;
+      color: #333;
+      &:hover{
+        color: blue;
+      }
+    }
+  }
+  .test{
+    font-size: 20px;
+  }
+}
+body{
+  color: red;
+}

@@ -1,0 +1,52 @@
+.test {
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -ms-border-radius: 20px;
+}
+.test.active {
+  background: #ddd;
+}
+.test .child {
+  background: #333;
+}
+
+.demo {
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -ms-border-radius: 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.demo.active {
+  background: #ddd;
+}
+.demo .child {
+  background: #333;
+}
+
+.box {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -ms-border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+}
+.box.active {
+  background: #ddd;
+}
+.box .child {
+  background: #333;
+}
+.box:hover {
+  background: #333;
+  color: #fff;
+}
+.box.active {
+  background: #eee;
+  color: #666;
+}
+
+/*# sourceMappingURL=mixins.css.map */

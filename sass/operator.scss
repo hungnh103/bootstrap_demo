@@ -1,0 +1,107 @@
+// bien dich file .scss thu cong:
+// mo cmd tai thu muc chua file .scss
+// chay lenh: sass filename.scss filename.css
+
+$font: "Times New Roman, Arial, Tahoma";
+$size: 10px;
+$padding: 10px 20px;
+
+.family{
+  font-family: $font;
+  font-size: $size;
+  padding: $padding;
+}
+
+.child{
+  font-family: $font;
+  font-size: $size;
+  padding: $padding;
+  color: #333;
+}
+
+//string
+$string: Test thu nghiem;
+$string2: Test + Test;
+$string3: Test + "Nghiem";
+$string4: "Test" + Nghiem;
+$string5: "Test" + "Test";
+$string6: "Test" "Test", "Test" + Mot Hai + Ba;
+$string7: "Test" + 150;
+$string8: Test + "150";
+$string9: Test + 150;
+$string10: 150 + Test;
+$string11: "150px" + 150px;
+$string12: 150px + "150px";
+/**mathematic operators**/
+//add
+$string13: 150px + 150px;
+$string14: 150em + 150;
+$string15: 150batky + 150batky;
+//subtract
+$string16: 150batky - 150batky;
+//multiply
+$string17: 150batky * 150;
+$string18: 150 * 150batky;
+//divide
+$string19: 150batky / 150batky;
+$string20: 150batky / 150;
+//remainder
+$string21: 150px % 100;
+$string22: 150px % 100px;
+$string23: 150 % 100px;
+$string24: 150batky % 100;
+//other
+$string25: 0px 5px 10px 15px;
+$string26: 0px + 5px 10px + 15px;
+$string27: 0px -5px - 10px / 15px;
+$string28: (0px - 5px - 10px) / 15px;
+$string29: (0px -5px - 10px) / 15px;
+.string {
+  string: $string;
+  string: $string2;
+  string: $string3;
+  string: $string4;
+  string: $string5;
+  string: $string6;
+  string: $string7;
+  string: $string8;
+  string: $string9;
+  string: $string10;
+  string: $string11;
+  string: $string12;
+}
+
+.add {
+  string: $string13;
+  string: $string14;
+  string: $string15;
+}
+
+.subtract {
+  string: $string16;
+}
+
+.multiply {
+  string: $string17;
+  string: $string18;
+}
+
+.divide {
+  string: $string19;
+  string: $string20;
+}
+
+.remainder {
+  string: $string21;
+  string: $string22;
+  string: $string23;
+  string: $string24;
+}
+
+.other {
+  string: $string25;
+  string: $string26;
+  string: $string27;
+  string: $string28;
+  string: $string29;
+}

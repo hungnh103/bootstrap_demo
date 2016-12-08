@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAiBA,OAAO;EACL,IAAI,EALU,SAAS;EAMvB,IAAI,EAAE,OAAwB;;;AAoB9B,MAAU;EACR,KAAK,EAAE,OAAe;;;AADxB,QAAU;EACR,KAAK,EAAE,OAAe;;;AADxB,MAAU;EACR,KAAK,EAAE,KAAe",
+"sources": ["function.scss"],
+"names": [],
+"file": "function.css"
+}

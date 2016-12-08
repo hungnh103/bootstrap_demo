@@ -1,0 +1,8 @@
+@import "function";
+@import "mixins";
+
+@debug wide-screen(70px);
+
+.demo{
+  @include border-radius;
+}

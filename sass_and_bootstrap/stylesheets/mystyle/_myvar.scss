@@ -1,0 +1,33 @@
+//== Navbar
+//=== purple navbar
+// Reset purple navbar basics
+$navbar-purple-color:                      #fff !default;
+$navbar-purple-bg:                         #6f5499 !default;
+$navbar-purple-border:                     darken($navbar-purple-bg, 10%) !default;
+
+// purple navbar links
+$navbar-purple-link-color:                 #fff !default;
+$navbar-purple-link-hover-color:           #fff !default;
+$navbar-purple-link-hover-bg:              transparent !default;
+$navbar-purple-link-active-color:          #fff !default;
+$navbar-purple-link-active-bg:             darken($navbar-purple-bg, 10%) !default;
+$navbar-purple-link-disabled-color:        #444 !default;
+$navbar-purple-link-disabled-bg:           transparent !default;
+
+// purple navbar brand label
+$navbar-purple-brand-color:                $navbar-purple-link-color !default;
+$navbar-purple-brand-hover-color:          #fff !default;
+$navbar-purple-brand-hover-bg:             transparent !default;
+
+// purple navbar toggle
+$navbar-purple-toggle-hover-bg:            #333 !default;
+$navbar-purple-toggle-icon-bar-bg:         #fff !default;
+$navbar-purple-toggle-border-color:        #333 !default;
+
+//== Colors
+$brand-purple:          #6f5499 !default;
+
+//== Buttons
+$btn-purple-color:                 #fff !default;
+$btn-purple-bg:                    $brand-purple !default;
+$btn-purple-border:                darken($btn-purple-bg, 5%) !default;

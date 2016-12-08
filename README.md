@@ -1,3 +1,3 @@
 ### Bootstrap Demo
 
-Learn bootstrap via examples
+Learn bootstrap and Sass via examples

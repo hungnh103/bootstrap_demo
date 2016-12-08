@@ -1,0 +1,4 @@
+.btn-purple {
+  @include button-variant($btn-purple-color, $btn-purple-bg, $btn-purple-border);
+  @include gradient-vertical($navbar-purple-bg, darken($navbar-purple-bg, 20%), 0%, 100%);
+}
